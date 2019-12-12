@@ -138,6 +138,10 @@
             margin: auto;
         }
     
+        .company-heading {
+            width: 60%;
+        }
+    
     .main-nav { display: none; }
 }
  
@@ -247,6 +251,10 @@
     
         .built-by {
             font-weight: 300;
+        }
+    
+        .company-heading {
+            width: 60%;
         }
     
      .main-nav { display: none; }
