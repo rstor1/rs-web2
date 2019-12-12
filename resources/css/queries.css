@@ -67,7 +67,8 @@
         .main-span {
           padding-bottom: 1px;
           border-bottom: 1px solid #fa4615;
-          line-height: 40px;
+          line-height: 30px;
+          margin: 2px 0;
         }
     
 /*
@@ -150,7 +151,9 @@
         }
     
         .main-span {
-          padding-bottom: 1px;
+          padding-bottom: 0px;
+          line-height: 100px;
+          margin: 0px 0;
         }
     
         .mobile-nav-icon { 
