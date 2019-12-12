@@ -1,0 +1,477 @@
+/*----------------------------------*/
+/* BASIC SETUP*/
+
+/* colors used:
+    red-orange: #fa4615
+    yellow-orange: #ffa200
+    main-background: #002939
+    light: #e6f8ff
+/*----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #e6f8ff;
+    color: #000;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*----------------------------------*/
+/* REUSABLE COMPONENTS*/
+/*----------------------------------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+    text-align: center;
+    color: #e6f8ff;
+}
+
+.dark-text {
+    color: #002939;
+}
+
+.light-text {
+    color: white;
+}
+
+/*-----HEADINGS-----*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #e6f8ff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #fa4615;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h5 {
+    color: #ffa200;
+}
+
+.clients-heading {
+    text-align: center;
+    margin-left: 0;
+    padding-top: 5px;
+}
+
+.company-heading {
+    text-align: center;
+    width: 70%;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.tech-header {
+    width: 70%;
+    margin-left: 15%;
+}
+
+/*-----PARAGRAPHS-----*/
+.long-copy {
+    line-height: 145%; 
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*-----BUTTONS-----*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+/*
+    border-radius: 200px;
+*/
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #fa4615;
+    border: 1px solid #fa4615;
+    color: #e6f8ff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #fa4615;
+    color: #fa4615;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #e13405;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #e13405;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e13405;
+    color: #e6f8ff;
+}
+
+/*----------------------------------*/
+/* EXPERIENCE*/
+/*----------------------------------*/
+.section-experience {
+    background-image: url(img/backgroundpanel2.png);
+/*
+    height: 100vh;
+*/
+    background-size: cover;
+    background-position: center;
+    color: #e6f8ff;
+    height: 100%;
+/*
+    padding: 60px 0px;
+*/
+}
+
+/*----------------------------------*/
+/* HEADER*/
+/*----------------------------------*/
+header {
+    background-image: url(img/backgroundpanel1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #e6f8ff;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-dark { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+
+/*MAIN NAV*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: #e6f8ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active { border-bottom: 2px solid #fa4615; }
+
+/*MOBILE NAV*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #e6f8ff;
+}
+
+/*STICKY NAV*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(230, 248, 255, 0.97);
+    -webkit-box-shadow: 0 2px 2px #c1c1c1;
+    box-shadow: 0 2px 2px #c1c1c1;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 17px 0px;
+    color: #002939; 
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-dark { display: block;  }
+
+.main-span {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fa4615;
+  line-height: 48px;
+}
+
+/*-----LISTS-----*/
+.tech-list {
+    display: grid;
+    line-height: 145%;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    width: 70%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.experience-lists {
+    line-height: 145%;
+    margin-top: 20px;
+    list-style: none;
+    text-align: left;
+}
+
+/*-----ICONS-----*/
+.tech-icons {
+    margin-right: 5px;
+    color: #fa4615;
+/*
+    vertical-align: middle;
+*/
+}
+
+.experience-icons:before {
+    margin-right: 10px;
+    color: #fa4615;
+}
+
+li  {
+    position: relative;
+    padding-left: 20px;
+    }
+
+li:before {       
+    position: absolute;
+    left: 0;
+    padding-top: 5px;
+    }
+
+.company-anchor { color: #e6f8ff; }
+
+.company-anchor:link,
+.company-anchor:visited {
+    padding: 8px 0px;
+    color: #e6f8ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.company-anchor:hover,
+.company-anchor:active
+{
+    border-bottom: 2px solid #fa4615;
+}
+
+/*----------------------------------*/
+/* ABOUT*/
+/*----------------------------------*/
+.profile-pic {
+    -webkit-box-shadow: 5px 10px #002939;
+    box-shadow: 5px 10px #002939;
+    margin-top: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pad-techdiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+/*----------------------------------*/
+/* CONTACT*/
+/*----------------------------------*/
+.email-link { color: #002939; }
+
+.email-link:link,
+.email-link:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.email-link:hover,
+.email-link:active {
+    color: #e13405;
+}
+
+.contact-element { text-align: center; }
+
+.section-contact { padding-bottom: 5px; }
+
+/*----------------------------------*/
+/* FOOTER*/
+/*----------------------------------*/
+
+footer { padding: 40px; }
+
+footer p {
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+.social-icons {
+    color: #002939;
+    list-style: none;
+}
+
+.social-list {
+    list-style: none;
+    width: 10%;
+    margin: auto;
+}
+
+.social-list li {
+    font-size: 30px;
+    display: inline-block;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.ion-social-instagram,
+.ion-social-linkedin {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+.ion-social-linkedin:hover {
+    color: #007bb5;
+}
+
+.built-by {
+    color: #002939;
+}
+
+/*----------------------------------*/
+/* ANIMATIONS*/
+/*----------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6
+{
+    opacity: 0;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+.js--wp-1.animated, 
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated
+{
+    opacity: 1;
+}
