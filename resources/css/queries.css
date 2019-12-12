@@ -245,6 +245,10 @@
             height: auto;
         }
     
+        .built-by {
+            font-weight: 300;
+        }
+    
      .main-nav { display: none; }
 
 }
