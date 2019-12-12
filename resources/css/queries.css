@@ -65,7 +65,7 @@
     .col { width: 100%; }
 
         .main-span {
-          padding-bottom: 2px;
+          padding-bottom: 1px;
           border-bottom: 1px solid #fa4615;
           line-height: 40px;
         }
@@ -147,6 +147,10 @@
             font-size: 12px;
             width: 100%;
             padding: 0 3%;
+        }
+    
+        .main-span {
+          padding-bottom: 1px;
         }
     
         .mobile-nav-icon { 
