@@ -162,7 +162,10 @@
             position: absolute;
             margin-left: 250px;
 
-    }
+        }
+        .long-copy {
+            font-weight: 300;
+        }
 
         .main-nav { 
             float: left; 
@@ -224,6 +227,7 @@
         .tech-list {
             display: block;
             margin-left: 25%;
+            font-weight: 300;
         }
     
         .tech-header {
