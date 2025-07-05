@@ -48,7 +48,7 @@ section {
 }
 
 .dark-text {
-    color: #002939;
+    color: #4B6060;
 }
 
 .light-text {
@@ -88,7 +88,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #fa4615;
+    background-color: #4B6060;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -113,6 +113,7 @@ h5 {
 }
 
 .tech-header {
+    font-weight: 400;
     width: 70%;
     margin-left: 15%;
 }
@@ -122,6 +123,7 @@ h5 {
     line-height: 145%; 
     width: 70%;
     margin-left: 15%;
+    font-weight: 400;
 }
 
 .box p {
@@ -177,7 +179,8 @@ h5 {
 /* EXPERIENCE*/
 /*----------------------------------*/
 .section-experience {
-    background-image: url(img/backgroundpanel2.png);
+    background-color: #809696;
+    /* background-image: url(img/backgroundpanel2.png); */
 /*
     height: 100vh;
 */
@@ -194,7 +197,8 @@ h5 {
 /* HEADER*/
 /*----------------------------------*/
 header {
-    background-image: url(img/backgroundpanel1.png);
+    background-color: #809696;
+    /* background-image: url(img/backgroundpanel1.png); */
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -249,10 +253,11 @@ header {
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
+    font-weight: 400;
 }
 
 .main-nav li a:hover,
-.main-nav li a:active { border-bottom: 2px solid #fa4615; }
+.main-nav li a:active { border-bottom: 2px solid #4B6060; }
 
 /*MOBILE NAV*/
 
@@ -293,7 +298,7 @@ header {
 
 .main-span {
   padding-bottom: 6px;
-  border-bottom: 1px solid #fa4615;
+  border-bottom: 1px solid #4B6060;
   line-height: 48px;
 }
 
@@ -305,6 +310,7 @@ header {
     width: 70%;
     margin-left: 15%;
     list-style: none;
+    font-weight: 400;
 }
 
 .experience-lists {
@@ -317,7 +323,7 @@ header {
 /*-----ICONS-----*/
 .tech-icons {
     margin-right: 5px;
-    color: #fa4615;
+    color: #4B6060;
 /*
     vertical-align: middle;
 */
@@ -363,8 +369,8 @@ li:before {
 /* ABOUT*/
 /*----------------------------------*/
 .profile-pic {
-    -webkit-box-shadow: 5px 10px #002939;
-    box-shadow: 5px 10px #002939;
+    -webkit-box-shadow: 5px 10px #687575;
+    box-shadow: 5px 10px #687575;
     margin-top: 20px;
     display: block;
     margin-right: auto;
