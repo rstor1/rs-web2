@@ -180,17 +180,28 @@ h5 {
 /*----------------------------------*/
 .section-experience {
     background-color: #809696;
-    /* background-image: url(img/backgroundpanel2.png); */
-/*
-    height: 100vh;
-*/
     background-size: cover;
     background-position: center;
     color: #e6f8ff;
     height: 100%;
-/*
-    padding: 60px 0px;
-*/
+}
+
+.company-logo {
+    height: auto;
+    width: auto;
+    display: block; 
+    margin: 0 auto 20px auto;
+    float: none;   
+    max-width: 120px;
+}
+
+.cgi-logo {
+    height: auto;
+    width: auto;
+    display: block; 
+    margin: 0 auto 20px auto;
+    float: none;   
+    max-width: 80px;
 }
 
 /*----------------------------------*/
@@ -318,6 +329,7 @@ header {
     margin-top: 20px;
     list-style: none;
     text-align: left;
+    font-weight: 300;
 }
 
 /*-----ICONS-----*/
@@ -331,7 +343,7 @@ header {
 
 .experience-icons:before {
     margin-right: 10px;
-    color: #fa4615;
+    color: #4B6060;
 }
 
 li  {
@@ -406,13 +418,18 @@ li:before {
 
 .contact-element { text-align: center; }
 
-.section-contact { padding-bottom: 5px; }
+.section-contact { padding-bottom: 5px; text-align: center; }
 
 /*----------------------------------*/
 /* FOOTER*/
 /*----------------------------------*/
 
 footer { padding: 40px; }
+
+footer .row {
+    text-align: center;
+    display: block; /* Remove flex if present */
+}
 
 footer p {
     text-align: center;
@@ -426,14 +443,17 @@ footer p {
 }
 
 .social-list {
-    list-style: none;
-    width: 10%;
+    width: auto;             
     margin: auto;
+    justify-content: center;
+    align-items: center;  
+    padding: 0;  
+    list-style: none;           
 }
 
 .social-list li {
     font-size: 30px;
-    display: inline-block;
+    margin-left: -20px;
 }
 
 .footer-text {
