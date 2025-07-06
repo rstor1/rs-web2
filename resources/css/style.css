@@ -313,6 +313,12 @@ header {
   line-height: 48px;
 }
 
+@media only screen and (max-width: 414px) {
+  .main-span {
+    padding-bottom: 0;
+  }
+}
+
 /*-----LISTS-----*/
 .tech-list {
     display: grid;
