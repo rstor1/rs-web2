@@ -209,7 +209,6 @@ h5 {
 /*----------------------------------*/
 header {
     background-color: #809696;
-    /* background-image: url(img/backgroundpanel1.png); */
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -311,12 +310,6 @@ header {
   padding-bottom: 0.25px;
   border-bottom: 1px solid #e13405;
   line-height: 48px;
-}
-
-@media only screen and (max-width: 414px) {
-  .main-span {
-    padding-bottom: 0;
-  }
 }
 
 /*-----LISTS-----*/
