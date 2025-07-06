@@ -475,6 +475,7 @@ footer p {
 }
 
 .built-by {
+    font-weight: 400;
     color: #002939;
 }
 
