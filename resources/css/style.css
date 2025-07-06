@@ -308,7 +308,7 @@ header {
 .sticky .logo-dark { display: block;  }
 
 .main-span {
-  padding-bottom: 6px;
+  padding-bottom: 2px;
   border-bottom: 1px solid #e13405;
   line-height: 48px;
 }
