@@ -502,3 +502,14 @@ footer p {
 {
     opacity: 1;
 }
+
+.imdb-link {
+  color: #4B6060;
+  transition: color .3s ease;
+  text-decoration: underline;
+}
+
+.imdb-link:hover {
+  color: #e13405; /* the color you want on hover */
+}
+
