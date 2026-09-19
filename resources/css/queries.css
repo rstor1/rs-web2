@@ -2,38 +2,42 @@
   .hero-shape-front { left: 42%; top: 28%; width: 75%; }
   .hero-shape-back { left: 36%; }
 
-  .nav-inner {
+  nav .nav-inner,
+  nav.sticky .nav-inner {
     position: relative;
-    min-height: 58px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    min-height: 58px;
+    height: 58px;
   }
 
-  .mobile-nav-icon {
+  nav .mobile-nav-icon,
+  nav.sticky .mobile-nav-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 42px;
     height: 42px;
-    padding: 0;
     margin: 0;
+    padding: 0;
     float: none;
-    position: absolute;
-    top: 50%;
-    right: 0;
     transform: translateY(-50%);
-    z-index: 2;
     line-height: 1;
   }
 
-  .mobile-nav-icon i {
+  nav .mobile-nav-icon i,
+  nav.sticky .mobile-nav-icon i {
     display: block;
     line-height: 1;
-    height: 1em;
+    margin: 0;
   }
 
-  .main-nav {
+  nav .main-nav,
+  nav.sticky .main-nav {
     position: absolute;
     top: 100%;
     right: 0;
@@ -41,6 +45,5 @@
     width: 100%;
     padding: 16px 0 0;
     background: rgba(41, 41, 41, 0.96);
-    z-index: 1;
   }
 }
