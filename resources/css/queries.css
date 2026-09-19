@@ -16,15 +16,21 @@
     justify-content: center;
     width: 42px;
     height: 42px;
+    padding: 0;
     margin: 0;
     float: none;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     z-index: 2;
+    line-height: 1;
   }
 
   .mobile-nav-icon i {
-    line-height: 1;
     display: block;
+    line-height: 1;
+    height: 1em;
   }
 
   .main-nav {
