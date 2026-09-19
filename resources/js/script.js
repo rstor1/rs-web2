@@ -3,12 +3,14 @@ $(document).ready(function () {
     var $navToggle = $('.js--nav-icon');
     var $mainNav = $('.js--main-nav');
 
-    /* Sticky navigation */
-    $('.js--section-about').waypoint(function (direction) {
-        $nav.toggleClass('sticky', direction === 'down');
-    }, {
-        offset: '60px'
-    });
+    function updateStickyNavigation() {
+        var aboutTop = $('#about').length ? $('#about').offset().top : $('.section-about').offset().top;
+        $nav.toggleClass('sticky', $(window).scrollTop() >= aboutTop - 60);
+    }
+
+    /* Keep the top navigation visible after the user scrolls past the hero. */
+    $(window).on('scroll', updateStickyNavigation);
+    updateStickyNavigation();
 
     function closeMobileNav() {
         $mainNav.stop(true, true).slideUp(200).removeClass('show');
@@ -23,6 +25,7 @@ $(document).ready(function () {
         } else {
             closeMobileNav();
         }
+        updateStickyNavigation();
     }
 
     $('a[href*="#"]:not([href="#"])').on('click', function () {
@@ -44,7 +47,6 @@ $(document).ready(function () {
     $('.js--wp-5').waypoint(function () { $('.js--wp-5').addClass('animated fadeIn'); }, { offset: '50%' });
     $('.js--wp-6').waypoint(function () { $('.js--wp-6').addClass('animated fadeIn'); }, { offset: '50%' });
 
-    /* Mobile navigation */
     $navToggle.on('click', function () {
         var isOpen = $mainNav.hasClass('show');
         if (isOpen) {
