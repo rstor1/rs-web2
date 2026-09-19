@@ -63,5 +63,35 @@ footer { padding: 28px 0; background: var(--ink-deep); color: white; }
 .footer-inner i { font-size: 1.5rem; transition: color .2s ease; }
 .footer-inner p { color: rgba(255,255,255,.56); font-size: .8rem; }
 .footer-inner a:hover i { color: #0a66c2; }
-@media (max-width: 767px) { .main-nav { display: none; flex-direction: column; gap: 14px; width: 100%; padding: 20px 0; } .main-nav.show { display: flex; } .nav-inner { display: block; } .mobile-nav-icon { display: block; float: right; margin-top: 24px; } .reference-identity { height: calc(100% - 82px); align-items: flex-start; padding-top: 100px; } .identity-copy { width: min(330px, 48%); margin-right: 0; } .portrait-frame { width: 190px; height: 190px; bottom: 20px; } .work-grid { grid-template-columns: 1fr; } .work-card:last-child { grid-column: auto; } nav.sticky .nav-inner { min-height: 58px; } }
+@media (max-width: 767px) {
+  .main-nav { display: none; flex-direction: column; gap: 14px; width: 100%; padding: 20px 0; }
+  .main-nav.show { display: flex; }
+  .nav-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 58px;
+  }
+  .mobile-nav-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    float: none;
+    transform: translateY(-50%);
+  }
+  .mobile-nav-icon i { font-size: 1.8rem; line-height: 1; }
+  .reference-identity { height: calc(100% - 82px); align-items: flex-start; padding-top: 100px; }
+  .identity-copy { width: min(330px, 48%); margin-right: 0; }
+  .portrait-frame { width: 190px; height: 190px; bottom: 20px; }
+  .work-grid { grid-template-columns: 1fr; }
+  .work-card:last-child { grid-column: auto; }
+  nav.sticky .nav-inner { min-height: 58px; }
+}
 @media (max-width: 480px) { body { font-size: 17px; } .reference-hero { min-height: 400px; height: 62vh; } .identity-copy { width: 58%; } .identity-copy h1 { font-size: .95rem; } .website-link { font-size: .68rem; } .portrait-frame { width: 155px; height: 155px; left: 0; bottom: 18px; } .reference-section { padding: 68px 0; } }
